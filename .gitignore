@@ -18,3 +18,4 @@ UniversalElectricity
 !include.bat
 !/modversion.txt
 !/README
+!hook.py
