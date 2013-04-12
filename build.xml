@@ -3,6 +3,7 @@
 <project name="UniversalElectricity" default="build">
 
 	<property file="build.properties" />
+	<property file="../share.properties" />
 	<property environment="env" />
 	<property name="file.UeJar" 	value="UniversalElectricity_v${version.mod.major}.${version.mod.minor}.${version.mod.revis}.${env.BUILD_NUMBER}.zip" />
 	<property name="file.BcJar" 	value="BasicComponents_v${version.mod.major}.${version.mod.minor}.${version.mod.revis}.${env.BUILD_NUMBER}.jar" />
@@ -16,9 +17,9 @@
 		<delete dir="output" />
 		<delete dir="${dir.development}/forge" />
 		
-		<copy todir="${dir.development}">
+		<!--<copy todir="${dir.development}">
 			<fileset dir="../Minecraft Forge/" />
-		</copy>
+		</copy>-->
 
 		<copy todir="${dir.mcp}/src/minecraft">
 			
