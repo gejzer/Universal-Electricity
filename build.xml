@@ -3,7 +3,7 @@
 <project name="UniversalElectricity" default="build">
 
 	<property file="build.properties" />
-	<property file="../share.properties" />
+	<property file="../shared.properties" />
 	<property environment="env" />
 	<property name="file.UeJar" 	value="UniversalElectricity_v${version.mod.major}.${version.mod.minor}.${version.mod.revis}.${env.BUILD_NUMBER}.zip" />
 	<property name="file.BcJar" 	value="BasicComponents_v${version.mod.major}.${version.mod.minor}.${version.mod.revis}.${env.BUILD_NUMBER}.jar" />
