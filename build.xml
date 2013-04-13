@@ -76,7 +76,7 @@
 		</copy>
 		
 		<copy todir="BcContents">
-			<fileset dir="${dir.mcp}/reobf/minecraft" excludes=".git/**" />
+			<fileset dir="${dir.mcp}/reobf/minecraft/universalelectricity" excludes=".git/**" />
 		
 			<fileset dir="${dir.development}resources">
 				<exclude name=".git/**"/>
