@@ -41,10 +41,10 @@
 		<replace dir="${dir.mcp}/src/minecraft" token="@BUILD@" value="${env.BUILD_NUMBER}" />
 
 		<exec dir="${dir.mcp}" executable="cmd" osfamily="windows">
-			<arg line="recompile.bat" />
+			<arg line="/c recompile.bat" />
 		</exec>
 		<exec dir="${dir.mcp}" executable="cmd" osfamily="windows">
-			<arg line="reobfuscate_srg.bat" />
+			<arg line="/c reobfuscate_srg.bat" />
 		</exec>
 		
 		<exec dir="${dir.mcp}" executable="bash" osfamily="unix">
