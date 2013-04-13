@@ -68,15 +68,17 @@
 		
 		<copy todir="UeContents">
 			<fileset dir="${dir.development}src" excludes=".git/**" />
-		
+		 
 			<fileset dir="${dir.development}resources">
 				<exclude name=".git/**"/>
 				<exclude name="**/*.xml"/>
 			</fileset>		
 		</copy>
-		
+		<copy todir="BcContents/universalelectricity">
+		<fileset dir="${dir.mcp}/reobf/minecraft/universalelectricity" excludes=".git/**" />
+		</copy>
 		<copy todir="BcContents">
-			<fileset dir="${dir.mcp}/reobf/minecraft/universalelectricity" excludes=".git/**" />
+			
 		
 			<fileset dir="${dir.development}resources">
 				<exclude name=".git/**"/>
